@@ -1,0 +1,58 @@
+# =============================================================================
+# Git Ignore - Stock Data Automation Tool
+# =============================================================================
+
+# --- Environment & Credentials ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+service_account.json
+credentials.json
+token.json
+access_token.txt
+
+# --- Python Bytecode & Caches ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Virtual Environments ---
+.venv/
+venv/
+env/
+ENV/
+build/
+dist/
+*.egg-info/
+
+# --- IDE & Editor Settings ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- Application Logs ---
+*.log
+app.log
+
+# --- Runtime Caches & Generated Datasets ---
+raw_data/
+*.xlsx
+*.xls
+.~lock.*#
+instrument_cache.json
+analytics_cache.json
+nfo_instruments.csv
+.nfo_last_download
+
+# --- Operating System Files ---
+.DS_Store
+Thumbs.db
+desktop.ini
